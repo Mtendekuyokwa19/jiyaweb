@@ -28,8 +28,32 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <div className="absolute inset-0 bg-white dark:bg-gray-950 overflow-hidden">
+          <Navbar />
+          {children}
+
+          <div className="absolute inset-0 opacity-5 dark:opacity-10">
+            <svg width="100%" height="100%">
+              <pattern
+                id="grid-finance"
+                x="0"
+                y="0"
+                width="40"
+                height="40"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 40 0 L 0 0 0 40"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  className="text-gray-500 dark:text-gray-400"
+                />
+              </pattern>
+              <rect width="100%" height="100%" fill="url(#grid-finance)" />
+            </svg>
+          </div>
+        </div>
       </body>
     </html>
   );
