@@ -4,16 +4,20 @@ import {
   Notification03Icon,
   Rocket02FreeIcons,
   RocketIcon,
+  SentIcon,
 } from "@hugeicons/core-free-icons";
+import { Button } from "@heroui/button";
+import { Input } from "@heroui/input";
+import Avatars from "@/components/avatar";
 export default function Home() {
   return (
-    <div className="flex min-h-screen   bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex min-h-screen    font-sans ">
       <main className="flex md:flex-row sm:flex-col    items-center justify-evenly   px-16 bg-white dark:bg-black sm:items-start">
         <section className="flex flex-col gap-4 justify-center h-full">
-          <div className="border-solid border-2 border-gray-400 rounded-xl flex w-fit p-2 gap-2">
-            <p className="">Lauching Soon !!</p>
+          <div className="border-solid backdrop-blur-2xl border-1 border-gray-400 rounded-xl flex w-fit p-2 gap-2">
+            <p className="">🚀Lauching Soon !!</p>
           </div>
-          <h1 className="font-bold text-4xl">
+          <h1 className="font-bold text-6xl">
             Find rides. Fill seats. Move faster
           </h1>
           <p className="text-md">
@@ -21,11 +25,19 @@ export default function Home() {
             commuters turning empty seats into shared journeys at affordable
             costs.
           </p>
-          <div>
-            <form>
-              <input type="text" className="border-solid" />
-              <button>Join Waitlist</button>
+          <div className="flex flex-col gap-2">
+            <form className="flex gap-2 items-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="border-solid border-1 border-gray-400 rounded-xl flex  p-2 gap-2"
+              />
+              <button className="flex gap-2 bg-blue-800 p-2 rounded-xl">
+                <p>Join the waitlist</p>
+                <HugeiconsIcon icon={SentIcon} />
+              </button>
             </form>
+            <Avatars />
           </div>
         </section>
         <section>
