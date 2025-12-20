@@ -9,10 +9,11 @@ import {
 import { Button } from "@heroui/button";
 import { Input } from "@heroui/input";
 import Avatars from "@/components/avatar";
+import { Feature } from "@/components/section";
 export default function Home() {
   return (
     <div className="flex min-h-screen    font-sans ">
-      <main className="flex md:flex-row sm:flex-col    items-center justify-evenly   px-16 bg-white dark:bg-black sm:items-start">
+      <div className="flex flex-col    items-center justify-evenly   px-16 bg-white dark:bg-black sm:items-start">
         <section className="flex flex-col gap-4 justify-center h-full">
           <div className="border-solid backdrop-blur-2xl border-1 border-gray-400 rounded-xl flex w-fit p-2 gap-2">
             <p className="">🚀Lauching Soon !!</p>
@@ -48,7 +49,9 @@ export default function Home() {
             alt="app shot"
           />
         </section>
-      </main>
+      </div>
+
+      <Feature />
     </div>
   );
 }
