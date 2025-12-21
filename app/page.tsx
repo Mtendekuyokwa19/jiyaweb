@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
@@ -33,7 +34,12 @@ export default function Home() {
                 placeholder="Enter your email"
                 className="border-solid border-1 border-gray-400 rounded-xl flex  p-2 gap-2"
               />
-              <button className="flex gap-2 bg-blue-800 p-2 rounded-xl">
+              <button
+                onClick={async () => {
+                  alert("Join the waitlist");
+                }}
+                className="flex gap-2 bg-blue-800 p-2 rounded-xl"
+              >
                 <p>Join the waitlist</p>
                 <HugeiconsIcon icon={SentIcon} />
               </button>
