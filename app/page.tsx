@@ -74,7 +74,7 @@ export default function Home() {
               />
               <button
                 type="submit"
-                className="flex gap-2 w-11/12 bg-blue-800 p-2 rounded-xl"
+                className="flex justify-center items-center gap-2 w-11/12 bg-blue-800 p-2 rounded-xl"
               >
                 <p>Join the waitlist</p>
                 <HugeiconsIcon icon={SentIcon} />
