@@ -14,8 +14,8 @@ import { Feature } from "@/components/section";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col    font-sans ">
-      <div className="flex     items-center justify-evenly   px-16  ">
-        <section className="flex flex-col gap-4  justify-center h-full">
+      <div className="flex sm:flex-col md:flex-row     items-center justify-evenly   px-16  ">
+        <section className="flex flex-col gap-4 sm:justify-center md:justify-center h-full">
           <div className="border-solid backdrop-blur-2xl border-1 border-gray-400 rounded-xl flex w-fit p-2 gap-2">
             <p className="">🚀Lauching Soon !!</p>
           </div>

@@ -8,13 +8,13 @@ export const Navbar = () => {
       <Logo />
       <ol className="flex font-bold font-medium gap-10">
         <li className="flex gap-4">
-          <button className="">
+          <a href="https://x.com/mtende_kuyokwa" target="_blank">
             <HugeiconsIcon icon={TwitterIcon} />
-          </button>
+          </a>
 
-          <button className="">
+          <a href="https://github.com/Mtendekuyokwa19" target="_blank">
             <HugeiconsIcon icon={GithubIcon} />
-          </button>
+          </a>
         </li>
       </ol>
     </nav>
