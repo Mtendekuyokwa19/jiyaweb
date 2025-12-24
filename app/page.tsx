@@ -83,7 +83,7 @@ export default function Home() {
             <Avatars />
           </div>
         </section>
-        <section className="w-[400px] md:w-3/4">
+        <section className="w-[400px] md:w-10/12">
           <Image
             src={"/hero_appshot.png"}
             width={1500}
