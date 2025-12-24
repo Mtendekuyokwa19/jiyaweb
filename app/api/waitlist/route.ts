@@ -8,6 +8,23 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Email is required' }, { status: 400 })
   }
 
+  // Basic email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    return NextResponse.json({ error: 'Invalid email format' }, { status: 400 })
+  }
+
+  // Check if email already exists
+  const { data: existing } = await supabase
+    .from('waitlist')
+    .select('email')
+    .eq('email', email)
+    .single()
+
+  if (existing) {
+    return NextResponse.json({ error: 'Email already registered' }, { status: 409 })
+  }
+
   const { error } = await supabase
     .from('waitlist')
     .insert([{ email }])

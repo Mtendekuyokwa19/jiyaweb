@@ -2,16 +2,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import { HugeiconsIcon } from "@hugeicons/react";
-import {
-  Notification03Icon,
-  Rocket02FreeIcons,
-  RocketIcon,
-  SentIcon,
-} from "@hugeicons/core-free-icons";
-import { Button } from "@heroui/button";
-import { Input } from "@heroui/input";
+import { SentIcon } from "@hugeicons/core-free-icons";
 import Avatars from "@/components/avatar";
-import { Feature } from "@/components/section";
+import { addToast } from "@heroui/toast";
 export default function Home() {
   const [email, setEmail] = useState("");
 
@@ -22,11 +15,29 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
     });
+
     if (response.ok) {
-      alert("Successfully joined the waitlist!");
+      addToast({
+        title: "Success!",
+        description: "You've been added to the waitlist.",
+        color: "success",
+      });
       setEmail("");
     } else {
-      alert("Error joining waitlist. Please try again.");
+      const errorData = await response.json();
+      let description = "Failed to join waitlist. Please try again.";
+
+      if (response.status === 409) {
+        description = "This email is already registered.";
+      } else if (response.status === 400 && errorData.error === 'Invalid email format') {
+        description = "Please enter a valid email address.";
+      }
+
+      addToast({
+        title: "Error",
+        description,
+        color: "danger",
+      });
     }
   };
 
