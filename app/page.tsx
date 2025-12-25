@@ -85,11 +85,18 @@ export default function Home() {
         </section>
         <section className="w-[400px] md:w-10/12">
           <Image
+            src={"/mobile_shot.png"}
+            width={1500}
+            height={1500}
+            alt="app shot"
+            className=" md:hidden flex w-full h-auto"
+          />
+          <Image
             src={"/hero_appshot.png"}
             width={1500}
             height={1500}
             alt="app shot"
-            className="w-full h-auto"
+            className=" hidden md:flex w-full h-auto"
           />
         </section>
       </div>
