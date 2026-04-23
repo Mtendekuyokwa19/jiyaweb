@@ -4,7 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import {
   Search01Icon,
   CarIcon,
-  UserVerifiedIcon,
+  StoreVerifiedIcon,
   WalletIcon,
   ChatIcon,
   StarIcon,
@@ -23,7 +23,7 @@ const features = [
     description: "Share your journey and earn money by filling empty seats.",
   },
   {
-    icon: <HugeiconsIcon icon={UserVerifiedIcon} size={24} />,
+    icon: <HugeiconsIcon icon={StoreVerifiedIcon} size={24} />,
     title: "Verified Users",
     description: "Trusted community members with verified identities.",
   },

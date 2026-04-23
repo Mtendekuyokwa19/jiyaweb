@@ -4,7 +4,7 @@ import { HugeiconsIcon } from "@hugeicons/react";
 import {
   RouteIcon,
   CalendarIcon,
-  SteeringWheelIcon,
+  StreeringWheelIcon,
 } from "@hugeicons/core-free-icons";
 import { StepCard } from "./ui/step-card";
 
@@ -23,7 +23,7 @@ const steps = [
   },
   {
     number: 3,
-    icon: <HugeiconsIcon icon={SteeringWheelIcon} size={28} />,
+    icon: <HugeiconsIcon icon={StreeringWheelIcon} size={28} />,
     title: "Ride & Share",
     description: "Enjoy your journey, meet new people, and rate your experience.",
   },

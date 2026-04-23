@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HugeiconsIcon } from "@hugeicons/react";
-import { AddCircleIcon, SubtractCircleIcon } from "@hugeicons/core-free-icons";
+import { AddCircleIcon, StarCircleIcon } from "@hugeicons/core-free-icons";
 
 interface FaqItemProps {
   question: string;
@@ -21,7 +21,7 @@ export function FaqItem({ question, answer }: FaqItemProps) {
       >
         <span className="font-medium text-[var(--text-primary)] pr-4">{question}</span>
         <HugeiconsIcon
-          icon={isOpen ? SubtractCircleIcon : AddCircleIcon}
+          icon={isOpen ? StarCircleIcon : AddCircleIcon}
           size={20}
           className="text-[var(--color-primary)] flex-shrink-0"
         />
