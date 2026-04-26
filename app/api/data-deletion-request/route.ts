@@ -45,7 +45,7 @@ Reason: ${reason || "Not provided"}
       { message: "Request submitted successfully" },
       { status: 200 }
     );
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to process request" },
       { status: 500 }

@@ -43,6 +43,7 @@ export default function DataDeletionPage() {
                 type="radio"
                 name="requestType"
                 value="delete"
+                required
                 className="w-4 h-4"
               />
               <div>
