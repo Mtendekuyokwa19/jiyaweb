@@ -14,7 +14,25 @@ export function Footer() {
           © 2025 Jiya Inc. All rights reserved.
         </p>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
+          <a
+            href="/terms"
+            className="text-sm text-[var(--text-secondary)] hover:text-[var(--color-primary)]"
+          >
+            Terms
+          </a>
+          <a
+            href="/privacy"
+            className="text-sm text-[var(--text-secondary)] hover:text-[var(--color-primary)]"
+          >
+            Privacy
+          </a>
+          <a
+            href="/data-deletion"
+            className="text-sm text-[var(--text-secondary)] hover:text-[var(--color-primary)]"
+          >
+            Data Deletion
+          </a>
           <a
             href="https://x.com/mtende_kuyokwa"
             target="_blank"
