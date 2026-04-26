@@ -9,6 +9,12 @@ export const Navbar = () => {
       <div className="flex justify-between items-center px-4 md:px-8 py-4 max-w-7xl mx-auto">
         <Logo />
         <div className="flex items-center gap-4">
+          <a
+            href="/data-deletion"
+            className="text-[var(--text-primary)] hover:text-[var(--color-primary)]"
+          >
+            Data
+          </a>
           <ThemeToggle />
           <a
             href="https://x.com/mtende_kuyokwa"
