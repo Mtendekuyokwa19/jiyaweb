@@ -14,27 +14,14 @@ const features = [
   {
     icon: <HugeiconsIcon icon={Search01Icon} size={24} />,
     title: "Search Rides",
-    description: "Find available rides near you with real-time search and filters.",
+    description:
+      "Find available rides near you with real-time search and filters.",
   },
   {
     icon: <HugeiconsIcon icon={CarIcon} size={24} />,
     title: "Offer Rides",
-    description: "Share your journey and connect with fellow travelers by filling empty seats.",
-  },
-  {
-    icon: <HugeiconsIcon icon={StoreVerifiedIcon} size={24} />,
-    title: "Verified Users",
-    description: "Trusted community members with verified identities.",
-  },
-  {
-    icon: <HugeiconsIcon icon={WalletIcon} size={24} />,
-    title: "Secure Platform",
-    description: "Safe and trusted connections with multiple verification options.",
-  },
-  {
-    icon: <HugeiconsIcon icon={ChatIcon} size={24} />,
-    title: "Real-time Chat",
-    description: "Communicate with riders directly through in-app messaging.",
+    description:
+      "Share your journey and connect with fellow travelers by filling empty seats.",
   },
   {
     icon: <HugeiconsIcon icon={StarIcon} size={24} />,
@@ -51,7 +38,8 @@ export function Features() {
           Everything you need for smooth ridesharing
         </h2>
         <p className="text-[var(--text-secondary)] max-w-2xl mx-auto">
-          Powerful features designed to make every journey comfortable, safe, and affordable.
+          Powerful features designed to make every journey comfortable, safe,
+          and affordable.
         </p>
       </div>
 
