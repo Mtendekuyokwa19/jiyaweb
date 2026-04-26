@@ -36,7 +36,6 @@ export default function PrivacyPage() {
             <li><strong>Identity Data:</strong> Name, profile picture, phone number, email address, and date of birth.</li>
             <li><strong>Vehicle Data:</strong> Driver&apos;s license, vehicle registration, insurance documents, and vehicle details (make, model, registration number).</li>
             <li><strong>Location Data:</strong> Pickup and drop-off points, route information, and travel schedules.</li>
-            <li><strong>Payment Data:</strong> Mobile money numbers and transaction records.</li>
             <li><strong>Usage Data:</strong> Rides posted, rides booked, ratings, and communication records.</li>
             <li><strong>Device Data:</strong> Device type, operating system, and app usage patterns.</li>
           </ul>
@@ -48,7 +47,7 @@ export default function PrivacyPage() {
           <ul>
             <li>Facilitating ride matching between Drivers and Passengers.</li>
             <li>Verifying Driver identities and vehicle credentials.</li>
-            <li>Processing ride bookings and facilitating payments.</li>
+            <li>Processing ride bookings and coordinating travel arrangements.</li>
             <li>Enabling communication between matched Users.</li>
             <li>Ensuring Platform safety and preventing fraud.</li>
             <li>Improving our services and user experience.</li>
@@ -73,7 +72,7 @@ export default function PrivacyPage() {
             <strong>Between Users:</strong> When a ride is booked, Drivers and Passengers may share relevant contact information and ride details to coordinate travel.
           </p>
           <p>
-            <strong>Third-Party Service Providers:</strong> Data may be shared with providers who assist in payment processing, cloud storage, and analytics.
+            <strong>Third-Party Service Providers:</strong> Data may be shared with providers who assist in ride coordination, cloud storage, and analytics.
           </p>
           <p>
             <strong>Legal Requirements:</strong> Data may be disclosed to authorities when required by law or to protect Platform integrity.

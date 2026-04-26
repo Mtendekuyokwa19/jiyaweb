@@ -22,14 +22,14 @@ export default function TermsPage() {
         <section>
           <h2>2. Nature of the Platform</h2>
           <p>
-            JIYA is a technology intermediary platform that facilitates connections between users for private, non-commercial ride-sharing and cost-sharing arrangements. JIYA does not provide transportation services, operate vehicles, or employ drivers.
+            JIYA is a technology intermediary platform that facilitates connections between users for private, non-commercial ride-sharing arrangements. JIYA does not provide transportation services, operate vehicles, or employ drivers.
           </p>
         </section>
 
         <section>
           <h2>3. Prohibition of Commercial Use</h2>
           <p>
-            Users agree that the Platform shall not be used for commercial passenger transport services. Any payments must be limited to cost-sharing contributions.
+            Users agree that the Platform shall not be used for commercial passenger transport services. All ride arrangements must be for non-commercial purposes.
           </p>
         </section>
 
@@ -41,9 +41,9 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2>5. Booking and Payments</h2>
+          <h2>5. Booking and Coordination</h2>
           <p>
-            JIYA may facilitate booking confirmations but all ride arrangements remain non-binding agreements between Users. Posting fees are separate and non-refundable.
+            JIYA may facilitate booking confirmations but all ride arrangements remain non-binding agreements between Users.
           </p>
         </section>
 

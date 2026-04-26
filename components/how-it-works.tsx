@@ -18,8 +18,8 @@ const steps = [
   {
     number: 2,
     icon: <HugeiconsIcon icon={CalendarIcon} size={28} />,
-    title: "Book & Pay",
-    description: "Secure your seat with instant in-app payment and receive confirmation.",
+    title: "Book Your Seat",
+    description: "Secure your seat with instant booking confirmation and coordination.",
   },
   {
     number: 3,

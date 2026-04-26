@@ -5,15 +5,15 @@ import { FaqItem } from "./ui/faq-item";
 const faqs = [
   {
     question: "How does Jiya work?",
-    answer: "Jiya connects drivers with empty seats to passengers traveling the same route. Simply search for your destination, book a seat, and travel together at a fraction of the cost.",
+    answer: "Jiya connects drivers with empty seats to passengers traveling the same route. Simply search for your destination, book a seat, and travel together.",
   },
   {
     question: "Is Jiya safe?",
     answer: "Safety is our top priority. All users undergo identity verification, rides are tracked in real-time, and our community rating system ensures transparency. We also have 24/7 support for any concerns.",
   },
   {
-    question: "How do payments work?",
-    answer: "Payments are processed securely through the app. Passengers pay when booking, and drivers receive their earnings after the ride is completed. We support multiple payment methods including mobile money.",
+    question: "How do I book a ride?",
+    answer: "Bookings are coordinated securely through the app. Simply select your route, confirm your seat, and coordinate directly with the driver.",
   },
   {
     question: "Can I cancel a booking?",
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     question: "How do I become a driver?",
-    answer: "To become a driver, download the app, complete your profile verification, and submit your vehicle documents. Once approved, you can start offering rides and earning.",
+    answer: "To become a driver, download the app, complete your profile verification, and submit your vehicle documents. Once approved, you can start offering rides.",
   },
 ];
 

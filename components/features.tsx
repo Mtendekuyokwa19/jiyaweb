@@ -5,7 +5,6 @@ import {
   Search01Icon,
   CarIcon,
   StoreVerifiedIcon,
-  WalletIcon,
   ChatIcon,
   StarIcon,
 } from "@hugeicons/core-free-icons";
@@ -20,7 +19,7 @@ const features = [
   {
     icon: <HugeiconsIcon icon={CarIcon} size={24} />,
     title: "Offer Rides",
-    description: "Share your journey and earn money by filling empty seats.",
+    description: "Share your journey and connect with fellow travelers by filling empty seats.",
   },
   {
     icon: <HugeiconsIcon icon={StoreVerifiedIcon} size={24} />,
@@ -29,8 +28,8 @@ const features = [
   },
   {
     icon: <HugeiconsIcon icon={WalletIcon} size={24} />,
-    title: "Secure Payments",
-    description: "Safe and instant transactions with multiple payment options.",
+    title: "Secure Platform",
+    description: "Safe and trusted connections with multiple verification options.",
   },
   {
     icon: <HugeiconsIcon icon={ChatIcon} size={24} />,

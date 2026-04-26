@@ -58,7 +58,7 @@ export function Hero() {
 
         <p className="text-center md:text-left text-[var(--text-secondary)] text-lg max-w-lg">
           Jiya makes ridesharing simple and safe. Join a community of verified
-          commuters turning empty seats into shared journeys at affordable costs.
+          commuters turning empty seats into shared journeys.
         </p>
 
         <div className="flex flex-col md:flex-row gap-3 items-center md:items-start w-full max-w-md">
