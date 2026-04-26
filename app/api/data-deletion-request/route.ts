@@ -12,6 +12,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!["export", "delete"].includes(requestType)) {
+      return NextResponse.json(
+        { error: "Request type must be 'export' or 'delete'" },
+        { status: 400 }
+      );
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json(
+        { error: "Invalid email format" },
+        { status: 400 }
+      );
+    }
+
     const timestamp = new Date().toISOString();
     const requestTypeLabel = requestType === "export" ? "Data Export" : "Account Deletion";
 
